@@ -8,11 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		F01115FC2254224B00831846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01115FB2254224B00831846 /* AppDelegate.swift */; };
-		F01115FE2254224B00831846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01115FD2254224B00831846 /* ViewController.swift */; };
-		F01116012254224B00831846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01115FF2254224B00831846 /* Main.storyboard */; };
+		F01115FE2254224B00831846 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01115FD2254224B00831846 /* HomeController.swift */; };
 		F01116032254224C00831846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01116022254224C00831846 /* Assets.xcassets */; };
 		F01116062254224C00831846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01116042254224C00831846 /* LaunchScreen.storyboard */; };
 		F01116112254224D00831846 /* ListGithubProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116102254224D00831846 /* ListGithubProjectsTests.swift */; };
+		F01116232254245200831846 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116222254245200831846 /* Coordinatable.swift */; };
+		F0111625225424F800831846 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0111624225424F800831846 /* HomeCoordinator.swift */; };
+		F01116272254261A00831846 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116262254261A00831846 /* ListController.swift */; };
+		F0111629225426F400831846 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0111628225426F400831846 /* ListCoordinator.swift */; };
+		F011162C2254279400831846 /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011162B2254279400831846 /* HomeDelegate.swift */; };
+		F02D26A722593EAF0049032B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26A622593EAF0049032B /* HomeView.swift */; };
+		F02D26A922593F4C0049032B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26A822593F4C0049032B /* ListView.swift */; };
+		F02D26AB225942A20049032B /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AA225942A20049032B /* ListCellView.swift */; };
+		F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AC2259459C0049032B /* Repositoreable.swift */; };
+		F02D26B022594AF50049032B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AF22594AF50049032B /* Repository.swift */; };
+		F02D26B222594B3B0049032B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B122594B3B0049032B /* Network.swift */; };
+		F02D26B7225A75300049032B /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B6225A75300049032B /* Repositories.swift */; };
+		F02D26BA225A817C0049032B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B9225A817C0049032B /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +40,26 @@
 /* Begin PBXFileReference section */
 		F01115F82254224B00831846 /* ListGithubProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListGithubProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01115FB2254224B00831846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F01115FD2254224B00831846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F01116002254224B00831846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F01115FD2254224B00831846 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F01116022254224C00831846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F01116052254224C00831846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F01116072254224C00831846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F011160C2254224D00831846 /* ListGithubProjectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListGithubProjectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01116102254224D00831846 /* ListGithubProjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGithubProjectsTests.swift; sourceTree = "<group>"; };
 		F01116122254224D00831846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01116222254245200831846 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		F0111624225424F800831846 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F01116262254261A00831846 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		F0111628225426F400831846 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		F011162B2254279400831846 /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
+		F02D26A622593EAF0049032B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F02D26A822593F4C0049032B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F02D26AA225942A20049032B /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		F02D26AC2259459C0049032B /* Repositoreable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositoreable.swift; sourceTree = "<group>"; };
+		F02D26AF22594AF50049032B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F02D26B122594B3B0049032B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F02D26B6225A75300049032B /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		F02D26B9225A817C0049032B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +101,9 @@
 		F01115FA2254224B00831846 /* ListGithubProjects */ = {
 			isa = PBXGroup;
 			children = (
-				F01115FB2254224B00831846 /* AppDelegate.swift */,
-				F01115FD2254224B00831846 /* ViewController.swift */,
-				F01115FF2254224B00831846 /* Main.storyboard */,
-				F01116022254224C00831846 /* Assets.xcassets */,
-				F01116042254224C00831846 /* LaunchScreen.storyboard */,
-				F01116072254224C00831846 /* Info.plist */,
+				F01116212254240900831846 /* Resources */,
+				F0111620225423F600831846 /* Sources */,
+				F011161F225423ED00831846 /* Other Sources */,
 			);
 			path = ListGithubProjects;
 			sourceTree = "<group>";
@@ -94,6 +115,109 @@
 				F01116122254224D00831846 /* Info.plist */,
 			);
 			path = ListGithubProjectsTests;
+			sourceTree = "<group>";
+		};
+		F011161B225423CC00831846 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F0111624225424F800831846 /* HomeCoordinator.swift */,
+				F0111628225426F400831846 /* ListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F011161C225423D600831846 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F01116262254261A00831846 /* ListController.swift */,
+				F01115FD2254224B00831846 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F011161D225423DF00831846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F02D26A622593EAF0049032B /* HomeView.swift */,
+				F02D26A822593F4C0049032B /* ListView.swift */,
+				F02D26AA225942A20049032B /* ListCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F011161E225423E600831846 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F01116222254245200831846 /* Coordinatable.swift */,
+				F02D26AC2259459C0049032B /* Repositoreable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F011161F225423ED00831846 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F01116072254224C00831846 /* Info.plist */,
+				F01115FB2254224B00831846 /* AppDelegate.swift */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F0111620225423F600831846 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F02D26B8225A81670049032B /* ViewModels */,
+				F02D26A522567CEB0049032B /* Network */,
+				F011162A2254278100831846 /* Delegates */,
+				F011161E225423E600831846 /* Protocols */,
+				F011161D225423DF00831846 /* Views */,
+				F011161C225423D600831846 /* Controllers */,
+				F011161B225423CC00831846 /* Coordinators */,
+				F02D26AE22594AE20049032B /* Models */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F01116212254240900831846 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F01116022254224C00831846 /* Assets.xcassets */,
+				F01116042254224C00831846 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F011162A2254278100831846 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F011162B2254279400831846 /* HomeDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F02D26A522567CEB0049032B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F02D26B122594B3B0049032B /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F02D26AE22594AE20049032B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F02D26AF22594AF50049032B /* Repository.swift */,
+				F02D26B6225A75300049032B /* Repositories.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F02D26B8225A81670049032B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F02D26B9225A817C0049032B /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +303,6 @@
 			files = (
 				F01116062254224C00831846 /* LaunchScreen.storyboard in Resources */,
 				F01116032254224C00831846 /* Assets.xcassets in Resources */,
-				F01116012254224B00831846 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +320,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01115FE2254224B00831846 /* ViewController.swift in Sources */,
+				F02D26B222594B3B0049032B /* Network.swift in Sources */,
+				F01115FE2254224B00831846 /* HomeController.swift in Sources */,
+				F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */,
+				F01116272254261A00831846 /* ListController.swift in Sources */,
+				F0111629225426F400831846 /* ListCoordinator.swift in Sources */,
+				F02D26BA225A817C0049032B /* ListViewModel.swift in Sources */,
+				F0111625225424F800831846 /* HomeCoordinator.swift in Sources */,
+				F02D26AB225942A20049032B /* ListCellView.swift in Sources */,
 				F01115FC2254224B00831846 /* AppDelegate.swift in Sources */,
+				F02D26A722593EAF0049032B /* HomeView.swift in Sources */,
+				F01116232254245200831846 /* Coordinatable.swift in Sources */,
+				F011162C2254279400831846 /* HomeDelegate.swift in Sources */,
+				F02D26A922593F4C0049032B /* ListView.swift in Sources */,
+				F02D26B022594AF50049032B /* Repository.swift in Sources */,
+				F02D26B7225A75300049032B /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +357,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F01115FF2254224B00831846 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F01116002254224B00831846 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F01116042254224C00831846 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = ListGithubProjects/Info.plist;
+				INFOPLIST_FILE = "ListGithubProjects/Other Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoniralves.ListGithubProjects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -380,7 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = ListGithubProjects/Info.plist;
+				INFOPLIST_FILE = "ListGithubProjects/Other Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoniralves.ListGithubProjects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

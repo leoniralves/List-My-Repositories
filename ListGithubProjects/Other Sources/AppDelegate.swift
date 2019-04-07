@@ -12,10 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    private var homeCoordinator: HomeCoordinator!
+    private lazy var navigationController: UINavigationController = {
+        let nav = UINavigationController()
+        nav.navigationBar.isTranslucent = false
+        self.homeCoordinator = HomeCoordinator(presenter: nav)
+        self.homeCoordinator.start()
+        return nav
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = navigationController
+        
         return true
     }
 
