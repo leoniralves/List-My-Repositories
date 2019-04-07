@@ -7,6 +7,7 @@ target 'ListGithubProjects' do
 
   # Pods for ListGithubProjects
   pod 'NetworkKit', :path => '../NetworkKit'
+  pod 'ListKit', :path => '../ListKit'
 
   target 'ListGithubProjectsTests' do
     inherit! :search_paths

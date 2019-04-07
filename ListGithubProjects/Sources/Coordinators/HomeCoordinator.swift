@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ListKit
 
 class HomeCoordinator: Coordinatable {
     
@@ -34,7 +35,6 @@ extension HomeCoordinator: HomeDelegate {
             fatalError()
         }
         
-        let listCoordinator = ListCoordinator(presenter: presenter)
-        listCoordinator.start()
+        ListKit.instantiateReposList(presenter: presenter)
     }
 }

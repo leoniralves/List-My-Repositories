@@ -1,16 +1,22 @@
 PODS:
+  - ListKit (0.1.0):
+    - NetworkKit (~> 0.1)
   - NetworkKit (0.1.0)
 
 DEPENDENCIES:
+  - ListKit (from `../ListKit`)
   - NetworkKit (from `../NetworkKit`)
 
 EXTERNAL SOURCES:
+  ListKit:
+    :path: "../ListKit"
   NetworkKit:
     :path: "../NetworkKit"
 
 SPEC CHECKSUMS:
-  NetworkKit: 456381a4585cc5b77d8aa0fdcc3a3516de36051b
+  ListKit: 01c337104abd8be0ba23aa31d30d89d89b6e38db
+  NetworkKit: 2dbb2ca30d3c8d8b8ab14d98e837588f4607b438
 
-PODFILE CHECKSUM: b3f86d2d395f7811de15b633f98df971c998f66e
+PODFILE CHECKSUM: 4d2a34e1f7548004f17daf1856ac603aa10625da
 
 COCOAPODS: 1.6.0

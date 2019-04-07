@@ -15,16 +15,8 @@
 		F01116112254224D00831846 /* ListGithubProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116102254224D00831846 /* ListGithubProjectsTests.swift */; };
 		F01116232254245200831846 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116222254245200831846 /* Coordinatable.swift */; };
 		F0111625225424F800831846 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0111624225424F800831846 /* HomeCoordinator.swift */; };
-		F01116272254261A00831846 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116262254261A00831846 /* ListController.swift */; };
-		F0111629225426F400831846 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0111628225426F400831846 /* ListCoordinator.swift */; };
 		F011162C2254279400831846 /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011162B2254279400831846 /* HomeDelegate.swift */; };
 		F02D26A722593EAF0049032B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26A622593EAF0049032B /* HomeView.swift */; };
-		F02D26A922593F4C0049032B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26A822593F4C0049032B /* ListView.swift */; };
-		F02D26AB225942A20049032B /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AA225942A20049032B /* ListCellView.swift */; };
-		F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AC2259459C0049032B /* Repositoreable.swift */; };
-		F02D26B022594AF50049032B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AF22594AF50049032B /* Repository.swift */; };
-		F02D26B7225A75300049032B /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B6225A75300049032B /* Repositories.swift */; };
-		F02D26BA225A817C0049032B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B9225A817C0049032B /* ListViewModel.swift */; };
 		F353AF2D79686ABB0A758686 /* Pods_ListGithubProjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D87F3EFD804E094322565E6 /* Pods_ListGithubProjects.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,16 +48,8 @@
 		F01116122254224D00831846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01116222254245200831846 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 		F0111624225424F800831846 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		F01116262254261A00831846 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
-		F0111628225426F400831846 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		F011162B2254279400831846 /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
 		F02D26A622593EAF0049032B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		F02D26A822593F4C0049032B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		F02D26AA225942A20049032B /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
-		F02D26AC2259459C0049032B /* Repositoreable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositoreable.swift; sourceTree = "<group>"; };
-		F02D26AF22594AF50049032B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		F02D26B6225A75300049032B /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
-		F02D26B9225A817C0049032B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				F0111624225424F800831846 /* HomeCoordinator.swift */,
-				F0111628225426F400831846 /* ListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -159,7 +142,6 @@
 		F011161C225423D600831846 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F01116262254261A00831846 /* ListController.swift */,
 				F01115FD2254224B00831846 /* HomeController.swift */,
 			);
 			path = Controllers;
@@ -169,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				F02D26A622593EAF0049032B /* HomeView.swift */,
-				F02D26A822593F4C0049032B /* ListView.swift */,
-				F02D26AA225942A20049032B /* ListCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				F01116222254245200831846 /* Coordinatable.swift */,
-				F02D26AC2259459C0049032B /* Repositoreable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -196,13 +175,11 @@
 		F0111620225423F600831846 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F02D26B8225A81670049032B /* ViewModels */,
 				F011162A2254278100831846 /* Delegates */,
 				F011161E225423E600831846 /* Protocols */,
 				F011161D225423DF00831846 /* Views */,
 				F011161C225423D600831846 /* Controllers */,
 				F011161B225423CC00831846 /* Coordinators */,
-				F02D26AE22594AE20049032B /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -222,23 +199,6 @@
 				F011162B2254279400831846 /* HomeDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		F02D26AE22594AE20049032B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F02D26AF22594AF50049032B /* Repository.swift */,
-				F02D26B6225A75300049032B /* Repositories.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F02D26B8225A81670049032B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F02D26B9225A817C0049032B /* ListViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,12 +331,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ListGithubProjects/Pods-ListGithubProjects-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ListKit/ListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/NetworkKit/NetworkKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NetworkKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,19 +376,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01115FE2254224B00831846 /* HomeController.swift in Sources */,
-				F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */,
-				F01116272254261A00831846 /* ListController.swift in Sources */,
-				F0111629225426F400831846 /* ListCoordinator.swift in Sources */,
-				F02D26BA225A817C0049032B /* ListViewModel.swift in Sources */,
 				F0111625225424F800831846 /* HomeCoordinator.swift in Sources */,
-				F02D26AB225942A20049032B /* ListCellView.swift in Sources */,
 				F01115FC2254224B00831846 /* AppDelegate.swift in Sources */,
 				F02D26A722593EAF0049032B /* HomeView.swift in Sources */,
 				F01116232254245200831846 /* Coordinatable.swift in Sources */,
 				F011162C2254279400831846 /* HomeDelegate.swift in Sources */,
-				F02D26A922593F4C0049032B /* ListView.swift in Sources */,
-				F02D26B022594AF50049032B /* Repository.swift in Sources */,
-				F02D26B7225A75300049032B /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
