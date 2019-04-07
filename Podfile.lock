@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: acc8c49e7250f6750201f902e6310e59545a218b
+PODS:
+  - NetworkKit (0.1.0)
+
+DEPENDENCIES:
+  - NetworkKit (from `../NetworkKit`)
+
+EXTERNAL SOURCES:
+  NetworkKit:
+    :path: "../NetworkKit"
+
+SPEC CHECKSUMS:
+  NetworkKit: 456381a4585cc5b77d8aa0fdcc3a3516de36051b
+
+PODFILE CHECKSUM: b3f86d2d395f7811de15b633f98df971c998f66e
 
 COCOAPODS: 1.6.0

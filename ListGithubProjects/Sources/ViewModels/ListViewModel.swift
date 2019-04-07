@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import NetworkKit
 
 class ListViewModel {
     
     func loadData(completion: @escaping ((_ repositories: [Repository])->Void)) {
-        Network.request(.repos, method: .GET) { (response) in
+        NetworkKit.request(.repos, method: .GET) { (response) in
             switch response {
             case .success(let paramenter):
                 do {

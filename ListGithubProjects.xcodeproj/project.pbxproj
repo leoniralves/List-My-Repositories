@@ -23,7 +23,6 @@
 		F02D26AB225942A20049032B /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AA225942A20049032B /* ListCellView.swift */; };
 		F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AC2259459C0049032B /* Repositoreable.swift */; };
 		F02D26B022594AF50049032B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26AF22594AF50049032B /* Repository.swift */; };
-		F02D26B222594B3B0049032B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B122594B3B0049032B /* Network.swift */; };
 		F02D26B7225A75300049032B /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B6225A75300049032B /* Repositories.swift */; };
 		F02D26BA225A817C0049032B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26B9225A817C0049032B /* ListViewModel.swift */; };
 		F353AF2D79686ABB0A758686 /* Pods_ListGithubProjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D87F3EFD804E094322565E6 /* Pods_ListGithubProjects.framework */; };
@@ -65,7 +64,6 @@
 		F02D26AA225942A20049032B /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
 		F02D26AC2259459C0049032B /* Repositoreable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositoreable.swift; sourceTree = "<group>"; };
 		F02D26AF22594AF50049032B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		F02D26B122594B3B0049032B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		F02D26B6225A75300049032B /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		F02D26B9225A817C0049032B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +96,6 @@
 				7A6CA795ED6B02E03E517784 /* Pods-ListGithubProjectsTests.debug.xcconfig */,
 				0AE7F1CA4F58F16B17436D62 /* Pods-ListGithubProjectsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				F02D26B8225A81670049032B /* ViewModels */,
-				F02D26A522567CEB0049032B /* Network */,
 				F011162A2254278100831846 /* Delegates */,
 				F011161E225423E600831846 /* Protocols */,
 				F011161D225423DF00831846 /* Views */,
@@ -226,14 +222,6 @@
 				F011162B2254279400831846 /* HomeDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		F02D26A522567CEB0049032B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				F02D26B122594B3B0049032B /* Network.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		F02D26AE22594AE20049032B /* Models */ = {
@@ -264,6 +252,7 @@
 				F01115F42254224B00831846 /* Sources */,
 				F01115F52254224B00831846 /* Frameworks */,
 				F01115F62254224B00831846 /* Resources */,
+				287497F8F34920B6A5DB7684 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +362,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		287497F8F34920B6A5DB7684 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListGithubProjects/Pods-ListGithubProjects-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NetworkKit/NetworkKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NetworkKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListGithubProjects/Pods-ListGithubProjects-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB910AD3AB2AEAD7258A876E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,7 +413,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02D26B222594B3B0049032B /* Network.swift in Sources */,
 				F01115FE2254224B00831846 /* HomeController.swift in Sources */,
 				F02D26AD2259459C0049032B /* Repositoreable.swift in Sources */,
 				F01116272254261A00831846 /* ListController.swift in Sources */,
