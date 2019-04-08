@@ -8,6 +8,7 @@
 
 import UIKit
 import ListKit
+import CoreKit
 
 class HomeCoordinator: Coordinatable {
     

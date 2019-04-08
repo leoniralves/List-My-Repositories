@@ -13,7 +13,6 @@
 		F01116032254224C00831846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01116022254224C00831846 /* Assets.xcassets */; };
 		F01116062254224C00831846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01116042254224C00831846 /* LaunchScreen.storyboard */; };
 		F01116112254224D00831846 /* ListGithubProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116102254224D00831846 /* ListGithubProjectsTests.swift */; };
-		F01116232254245200831846 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01116222254245200831846 /* Coordinatable.swift */; };
 		F0111625225424F800831846 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0111624225424F800831846 /* HomeCoordinator.swift */; };
 		F011162C2254279400831846 /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011162B2254279400831846 /* HomeDelegate.swift */; };
 		F02D26A722593EAF0049032B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D26A622593EAF0049032B /* HomeView.swift */; };
@@ -46,7 +45,6 @@
 		F011160C2254224D00831846 /* ListGithubProjectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListGithubProjectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01116102254224D00831846 /* ListGithubProjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGithubProjectsTests.swift; sourceTree = "<group>"; };
 		F01116122254224D00831846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F01116222254245200831846 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 		F0111624225424F800831846 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		F011162B2254279400831846 /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
 		F02D26A622593EAF0049032B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -155,14 +153,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F011161E225423E600831846 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				F01116222254245200831846 /* Coordinatable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		F011161F225423ED00831846 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				F011162A2254278100831846 /* Delegates */,
-				F011161E225423E600831846 /* Protocols */,
 				F011161D225423DF00831846 /* Views */,
 				F011161C225423D600831846 /* Controllers */,
 				F011161B225423CC00831846 /* Coordinators */,
@@ -331,6 +320,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ListGithubProjects/Pods-ListGithubProjects-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CoreKit/CoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ListKit/ListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/NetworkKit/NetworkKit.framework",
 			);
@@ -338,6 +328,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NetworkKit.framework",
 			);
@@ -379,7 +370,6 @@
 				F0111625225424F800831846 /* HomeCoordinator.swift in Sources */,
 				F01115FC2254224B00831846 /* AppDelegate.swift in Sources */,
 				F02D26A722593EAF0049032B /* HomeView.swift in Sources */,
-				F01116232254245200831846 /* Coordinatable.swift in Sources */,
 				F011162C2254279400831846 /* HomeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
